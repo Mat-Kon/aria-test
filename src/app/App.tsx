@@ -1,13 +1,12 @@
 import { WrapperImgBg } from "../shared/ui/wrapper-bg";
+import { MainBlock } from "../widget/main-block";
 
 function App() {
 
   return (
-    <>
     <WrapperImgBg>
-      <h1>HEADING</h1>
+      <MainBlock />
     </WrapperImgBg>
-    </>
   )
 }
 

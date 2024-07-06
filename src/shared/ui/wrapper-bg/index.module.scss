@@ -10,8 +10,16 @@
   position: relative;
   min-height: 100%;
 
+  @include main.media-table {
+    position: fixed;
+  }
+
   & .wrapperImgBg__imgItem {
     position: relative;
+
+    @include main.media-table {
+      width: 60%;
+    }
 
     & svg {
       width: 100%;
@@ -20,16 +28,31 @@
     &:nth-child(1) {
       top: 0;
       right: 0;
+
+      @include main.media-table {
+        top: 10%;
+        left: 50%;
+      }
     }
 
     &:nth-child(2) {
       top: 0;
       right: 70%;
+
+      @include main.media-table {
+        top: -300px;
+        right: 15%;
+      }
     }
 
     &:nth-child(3) {
       bottom: 0;
       right: 0;
+
+      @include main.media-table {
+        bottom: 470px;
+        left: 50%;
+      }
     }
   }
 }

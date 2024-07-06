@@ -1,0 +1,5 @@
+@use '@styles/main' as main;
+
+.asBtn {
+  @include main.market-btn();
+}

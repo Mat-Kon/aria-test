@@ -1,0 +1,1 @@
+export { GooglePlayBtn } from './ui';

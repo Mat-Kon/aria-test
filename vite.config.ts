@@ -10,11 +10,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@shared': path.resolve(__dirname, 'src', 'shared'),
       '@styles': path.resolve(__dirname, 'src', 'shared', 'styles'),
-      '@features': path.resolve(__dirname, 'src', 'features'),
-      '@widgets': path.resolve(__dirname, 'src', 'widgets'),
     }
   }
 })

@@ -5,3 +5,27 @@
   justify-content: $justify;
   gap: $gap
 }
+
+@mixin market-btn {
+  @include flex($gap: 10px, $alignItems: center, $justify: flex-start);
+  width: fit-content;
+  padding: 10px 20px 10px 10px;
+  color: $color-grey;
+  background-color: $color-grey-dark;
+  border-radius: 15px;
+
+  & p {
+    font-size: 1.2rem;
+  }
+
+  & h6 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+@mixin media-table() {
+  @media screen and (max-width: $width-table) {
+    @content
+  }
+};

@@ -1,0 +1,49 @@
+@use '@styles/main.scss' as main;
+
+.InfoBlock {
+  @include main.flex($direction: column, $gap: 60px);
+  width: 100%;
+
+  & p {
+    color: main.$color-grey;
+  }
+}
+
+.InfoBlock__heading {
+  font-size: 8.4rem;
+  color: main.$color-font-base;
+}
+
+.heading__gradient {
+  background: linear-gradient(0.25turn, main.$color-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc {
+  font-size: 3.4rem;
+}
+
+.InfoBlock__dataList {
+  @include main.flex();
+  width: 50%;
+  list-style: none;
+
+  & h2 {
+    color: main.$color-font-base;
+    font-size: 4.2rem;
+  }
+
+  & p {
+    font-size: 1.8rem;
+  }
+}
+
+.InfoBlock__markets {
+  @include main.flex($gap: 20px);
+  width: 30%;
+
+  & a {
+    flex: 1;
+  }
+}
