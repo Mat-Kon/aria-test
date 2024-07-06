@@ -1,0 +1,35 @@
+@use '@styles/main.scss' as main;
+
+.wrapperImgBg {
+  @include main.flex($justify: space-between);
+  width: 80%;
+  margin: auto;
+}
+
+.wrapperImgBg__imgs {
+  position: relative;
+  min-height: 100%;
+
+  & .wrapperImgBg__imgItem {
+    position: relative;
+
+    & svg {
+      width: 100%;
+    }
+
+    &:nth-child(1) {
+      top: 0;
+      right: 0;
+    }
+
+    &:nth-child(2) {
+      top: 0;
+      right: 70%;
+    }
+
+    &:nth-child(3) {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

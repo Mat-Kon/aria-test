@@ -1,3 +1,22 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Teko", sans-serif;
+  font-size: 10px;
+}
+
 body {
-  background-color: red;
+  background-color: $color-black;;
+}
+
+h1, p {
+  color: $color-font-base;
 }

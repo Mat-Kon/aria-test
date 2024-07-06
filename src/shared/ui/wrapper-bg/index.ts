@@ -1,0 +1,1 @@
+export { WrapperImgBg } from './ui';
