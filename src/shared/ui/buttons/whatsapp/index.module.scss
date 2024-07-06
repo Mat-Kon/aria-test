@@ -13,4 +13,8 @@
   border-radius: 20px;
   background: linear-gradient(0.25turn, main.$color-gradient);
   box-shadow: 0px 0px 125px -12px main.$color-shadow;
+
+  @include main.media-table {
+    width: 100%;
+  }
 }

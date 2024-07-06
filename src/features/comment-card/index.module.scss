@@ -1,0 +1,45 @@
+@use '@styles/main.scss' as main;
+
+.blur {
+  background-color: transparent;
+  border: 1px solid main.$color-grey;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 100%;
+}
+
+.commentCard {
+  @include main.flex($direction: column, $gap: 10px);
+  position: relative;
+  background-color: inherit;
+  z-index: 10;
+  padding: 20px;
+}
+
+.commentCard__info {
+  @include main.flex();
+  width: fit-content;
+  gap: 20px;
+  border: 1px solid in;
+
+  & img {
+    width: 48px;
+  }
+
+  & h6 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: main.$color-font-base;
+  }
+
+  & p {
+    font-size: 1.6rem;
+    color: main.$color-grey;
+  }
+}
+
+.commentCard__comment {
+  // width: 70%;
+  font-size: 1.8rem;
+}

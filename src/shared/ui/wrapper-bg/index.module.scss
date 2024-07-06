@@ -4,6 +4,9 @@
   @include main.flex($justify: space-between);
   width: 80%;
   margin: auto;
+  @include main.media-table {
+    width: 90%;
+  }
 }
 
 .wrapperImgBg__imgs {

@@ -1,5 +1,27 @@
+@use '@styles/main.scss' as main;
+
+.mainBlock {
+  width: 100%;
+}
+
 .leftBlock {
   z-index: 10;
   position: absolute;
   width: 65%;
+
+  @include main.media-table {
+    width: 100%;
+  }
+}
+
+.rightBlock {
+  z-index: 10;
+  position: absolute;
+  top: 160px;
+  right: 100px;
+  width: 19%;
+
+  @include main.media-table {
+    display: none;
+  }
 }

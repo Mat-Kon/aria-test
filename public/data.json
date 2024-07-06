@@ -1,0 +1,28 @@
+{
+  "comments": [
+    {
+      "photo": "./assets/avatars/lorenzo.png",
+      "name": "Lorenzo",
+      "email": "@lorenzoo",
+      "comment": "Amazing Telegram bot! Provides real-time crypto prices and news"
+    },
+    {
+      "photo": "./assets/avatars/adalina.png",
+      "name": "Adalina",
+      "email": "@ada",
+      "comment": "Must-have bot for crypto traders. Accurate signals and analysis"
+    },
+    {
+      "photo": "./assets/avatars/alexander.png",
+      "name": "Alexander",
+      "email": "@alex_x",
+      "comment": "Superb cryptocurrency bot! Quick updates and reliable data"
+    },
+    {
+      "photo": "./assets/avatars/rushana.png",
+      "name": "Rushana",
+      "email": "@Hana",
+      "comment": "Efficient and user-friendly bot. Simplifies crypto trading tasks"
+    }
+  ]
+}

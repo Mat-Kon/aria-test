@@ -3,7 +3,10 @@
 .InfoBlock {
   @include main.flex($direction: column, $gap: 60px);
   width: 100%;
-
+  
+  @include main.media-table {
+    align-items: center;
+  }
   & p {
     color: main.$color-grey;
   }
@@ -12,6 +15,10 @@
 .InfoBlock__heading {
   font-size: 8.4rem;
   color: main.$color-font-base;
+
+  @include main.media-table {
+    font-size: 4rem;
+  }
 }
 
 .heading__gradient {
@@ -22,12 +29,20 @@
 
 .desc {
   font-size: 3.4rem;
+  @include main.media-table {
+    width: 50%;
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
 .InfoBlock__dataList {
   @include main.flex();
   width: 50%;
   list-style: none;
+  @include main.media-table {
+    width: 100%;
+  }
 
   & h2 {
     color: main.$color-font-base;
@@ -42,6 +57,10 @@
 .InfoBlock__markets {
   @include main.flex($gap: 20px);
   width: 30%;
+  @include main.media-table {
+    width: 100%;
+    margin-top: -40px;
+  }
 
   & a {
     flex: 1;
